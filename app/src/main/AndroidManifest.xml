@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amtech.tahfizulquranonline">
+    <!-- <keystorePass : qwerty13> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tahfizul"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,UnusedAttribute">
+        <activity
+            android:name=".PaymentActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".v2.MoulimProfileActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".v2.ListofMoulimsActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.AllPaymentActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".v2.PaymentActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".v2.SubscriptionActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".v2.ThalibeIlmLogin"
+            android:exported="true"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.WalidMainActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.MaulimCompleteAssignmentActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.TalibDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.DemoActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.TalibPendingAssignmentDetails"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.CompReportDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.CompletedReportDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.PendingReportDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.TalibMainActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.WalidHomeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.TalibHomeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.MualemHomeActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.JitsiCallActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".v2.RenewPaymentActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.MaulimDetailsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme2" />
+
+        <service
+            android:name="org.jitsi.meet.sdk.ConnectionService"
+            android:exported="false"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.jitsi.meet.sdk.JitsiMeetOngoingConferenceService"
+            android:exported="false" />
+        <service
+            android:name=".record.hbrecorder.ScreenRecordService"
+            android:foregroundServiceType="mediaProjection"
+            tools:targetApi="q" />
+
+        <receiver android:name=".record.hbrecorder.NotificationReceiver" />
+        <activity android:name=".record.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

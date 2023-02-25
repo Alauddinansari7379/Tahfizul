@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "744488057985",
+    "project_id": "onlineedu-36b3a",
+    "storage_bucket": "onlineedu-36b3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744488057985:android:e21ba40cc1b6722783e180",
+        "android_client_info": {
+          "package_name": "com.amtech.tahfizulquranonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744488057985-a02g6a260llldvtm71c5fuq8g7u3m47r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amtech.tahfizulquranonline",
+            "certificate_hash": "a8714c37d8d5001d905724f47df04c04a6d4a71b"
+          }
+        },
+        {
+          "client_id": "744488057985-752vj1gk4p1dsaa2gvgqqqtfb2sjn879.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRQHjVoS4GEWnOp34kL3f_X3uWL1aNa-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744488057985-752vj1gk4p1dsaa2gvgqqqtfb2sjn879.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

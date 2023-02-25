@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/bg_type_10.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/bg_type_2.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/bg_type_3.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/bg_type_4.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/bg_type_5.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/bg_type_7.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/btn_type_1.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/btn_type_2.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/btn_type_3.xml" value="0.1795" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/business_type_bg.xml" value="0.19" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/dialog_bg.xml" value="0.2" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/edittxt_bg_type1.xml" value="0.2315" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.2555" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/ic_baseline_data_thresholding_24.xml" value="0.157" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/ic_baseline_location_city_24.xml" value="0.2555" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/left_half_edtxt.xml" value="0.2555" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/drawable/light_white_10sdp.xml" value="0.131" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_comp_report_details.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_completed_report_details.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_create_assigment.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_demo.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_login.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_maulim_complete_assignment.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_maulim_details.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_mualem_home.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_payment.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_pending_report_details.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_subscription.xml" value="0.152" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_talib_details.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_talib_home.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_talib_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_talib_pending_assignment_details.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_thalibe_ilm_login.xml" value="0.152" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/activity_walid_home.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/country_item_list.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/custom_view.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/dialog_txt_item.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fail.xml" value="0.2" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/feedback_view_item.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_comp_assignment.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_completed_assign.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_first_subscription.xml" value="0.264" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_maulim_details.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_maulim_feedback.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_maulim_profile.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_mualem_login.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_new_assignment.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_report.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_talib_comp_assign.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_talib_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_talib_login.xml" value="0.176" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_talib_profile.xml" value="0.2" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_talib_register.xml" value="0.2" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_talibilm_details.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_third_subscription.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/fragment_walid_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/item_layout.xml" value="0.4" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/item_onboarding_container.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/loading_dialog.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/no_internet_layout.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/layout/payment_status_dialog.xml" value="0.264" />
+        <entry key="..\:/Users/devhi/Downloads/Tahfizul/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.251" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

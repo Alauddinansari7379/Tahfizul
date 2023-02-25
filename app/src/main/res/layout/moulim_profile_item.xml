@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/timingLy1"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/timingLb1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:textColor="@color/colorBlueDark"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/switchBtn1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/switchBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:thumbTint="@color/colorPrimary"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:buttonTint="@color/colorPrimary"
+                    app:layout_constraintStart_toEndOf="@id/timingLy1"
+                    app:layout_constraintBottom_toBottomOf="@+id/timingLb1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/timingLb1" />
+
+                <TextView
+                    android:id="@+id/fromLb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:text="From"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="@+id/timingLb1"
+                    app:layout_constraintTop_toBottomOf="@+id/timingLb1" />
+
+                <TextView
+                    android:id="@+id/toLb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintStart_toStartOf="@+id/toTimeTxt1"
+                    app:layout_constraintTop_toTopOf="@+id/fromLb1" />
+
+                <TextView
+                    android:id="@+id/fromTimeTxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/black_stroke"
+                    android:maxLength="5"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintStart_toStartOf="@+id/fromLb1"
+                    app:layout_constraintTop_toBottomOf="@+id/fromLb1" />
+
+                <TextView
+                    android:id="@+id/toTimeTxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_stroke"
+                    android:maxLength="5"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/fromTimeTxt1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/fromTimeTxt1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

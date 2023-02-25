@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGreyLite">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/bg_type_4"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mualem Slots"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"/>
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/test_call_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect To Talibilm"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/btn_type_1"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_slots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/btn_type_1"
+            android:padding="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_baseline_refresh_24"
+            android:layout_gravity="end"/>
+    </FrameLayout>
+
+
+</LinearLayout>

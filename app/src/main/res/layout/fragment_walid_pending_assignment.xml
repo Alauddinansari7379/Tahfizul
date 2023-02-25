@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENDING"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ASSIGNMENTS OF"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:textColor="@color/black_lite"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/bg_type_3">
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/talib_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pending_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/assign_item1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:background="@drawable/btn_type_4"-->
+        <!--            android:layout_marginStart="15dp"-->
+        <!--            android:layout_marginEnd="15dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:paddingTop="10dp"-->
+        <!--            android:paddingStart="10dp"-->
+        <!--            android:paddingEnd="10dp"-->
+        <!--            android:paddingBottom="20dp">-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="ASSIGNMENTS-3"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="PARA 1, RUKU 3"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                </LinearLayout>-->
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="August 12, 2020"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="09:00 - 09:30"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                </LinearLayout>-->
+        <!--            </LinearLayout>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/dummy_txt_1"-->
+        <!--                android:textStyle="normal"-->
+        <!--                android:textSize="21sp"-->
+        <!--                android:textColor="@color/black_lite"-->
+        <!--                android:layout_marginStart="30dp"-->
+        <!--                android:layout_marginEnd="20dp"/>-->
+        <!--        </LinearLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/assign_item2"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:background="@drawable/btn_type_4"-->
+        <!--            android:layout_marginStart="15dp"-->
+        <!--            android:layout_marginEnd="15dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:paddingTop="10dp"-->
+        <!--            android:paddingStart="10dp"-->
+        <!--            android:paddingEnd="10dp"-->
+        <!--            android:paddingBottom="20dp">-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="ASSIGNMENTS-4"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="PARA 1, RUKU 4"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                </LinearLayout>-->
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="August 12, 2020"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="09:00 - 09:30"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                </LinearLayout>-->
+        <!--            </LinearLayout>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/dummy_txt_1"-->
+        <!--                android:textStyle="normal"-->
+        <!--                android:textSize="21sp"-->
+        <!--                android:textColor="@color/black_lite"-->
+        <!--                android:layout_marginStart="30dp"-->
+        <!--                android:layout_marginEnd="20dp"/>-->
+        <!--        </LinearLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/assign_item3"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:background="@drawable/btn_type_4"-->
+        <!--            android:layout_marginStart="15dp"-->
+        <!--            android:layout_marginEnd="15dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_marginBottom="30dp"-->
+        <!--            android:paddingTop="10dp"-->
+        <!--            android:paddingStart="10dp"-->
+        <!--            android:paddingEnd="10dp"-->
+        <!--            android:paddingBottom="20dp">-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:padding="10dp">-->
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="ASSIGNMENTS-5"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="PARA 1, RUKU 5"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                </LinearLayout>-->
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="vertical">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="August 12, 2020"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="09:00 - 09:30"-->
+        <!--                        android:textStyle="normal"-->
+        <!--                        android:textSize="17sp"-->
+        <!--                        android:textColor="@color/black_lite"-->
+        <!--                        android:layout_marginStart="20dp"-->
+        <!--                        android:layout_marginEnd="20dp"/>-->
+        <!--                </LinearLayout>-->
+        <!--            </LinearLayout>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="@string/dummy_txt_1"-->
+        <!--                android:textStyle="normal"-->
+        <!--                android:textSize="21sp"-->
+        <!--                android:textColor="@color/black_lite"-->
+        <!--                android:layout_marginStart="30dp"-->
+        <!--                android:layout_marginEnd="20dp"/>-->
+        <!--        </LinearLayout>-->
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

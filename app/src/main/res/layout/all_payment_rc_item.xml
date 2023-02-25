@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_15sdp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tranIdLb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_8ssp"
+            android:text="Transaction Id:"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tranIdTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pay_KaGttHDWFSKdpd"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tranIdLb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tranIdLb"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tranDateLb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Date:"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tranIdLb"
+            app:layout_constraintTop_toBottomOf="@+id/tranIdLb" />
+
+        <TextView
+            android:id="@+id/trandateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31-Oct-2022"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tranDateLb"
+            app:layout_constraintStart_toStartOf="@+id/tranIdTxt"
+            app:layout_constraintTop_toTopOf="@+id/tranDateLb" />
+
+
+        <TextView
+            android:id="@+id/payTypeLB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Type:"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tranIdLb"
+            app:layout_constraintTop_toBottomOf="@+id/tranDateLb" />
+
+        <TextView
+            android:id="@+id/payTypeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/payTypeLB"
+            app:layout_constraintStart_toStartOf="@+id/trandateTxt"
+            app:layout_constraintTop_toTopOf="@+id/payTypeLB" />
+
+
+            <TextView
+                android:id="@+id/amountLb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Amount:"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tranIdLb"
+                app:layout_constraintTop_toBottomOf="@+id/payTypeLB" />
+
+            <TextView
+                android:id="@+id/amountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/amountLb"
+                app:layout_constraintStart_toStartOf="@+id/trandateTxt"
+                app:layout_constraintTop_toTopOf="@+id/amountLb" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

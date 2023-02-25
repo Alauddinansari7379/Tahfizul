@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dash"
+        android:checkable="true"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:iconTint="@color/colorDeepGreen" />
+    <item
+        android:id="@+id/maulim_profile"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/profile"
+        app:iconTint="@color/colorDeepGreen" />
+    <item
+        android:id="@+id/maulim_timeslots"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_more_time_24"
+        android:title="@string/mou_timeslots"
+        app:iconTint="@color/colorDeepGreen" />
+    <!--    <item-->
+    <!--        android:id="@+id/assignments"-->
+    <!--        android:title="@string/mou_assignments"-->
+    <!--        android:checkable="false"-->
+    <!--        android:icon="@drawable/ic_baseline_assignment_24"-->
+    <!--        app:iconTint="@color/colorDeepGreen"/>-->
+    <item
+        android:id="@+id/new_assignment"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_assignment_ind_24"
+        android:title="@string/mou_new_assign"
+        app:iconTint="@color/colorDeepGreen" />
+    <item
+        android:id="@+id/pending_assignments"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_assignment_turned_in_24"
+        android:title="@string/mou_pending_assign"
+        app:iconTint="@color/colorDeepGreen" />
+    <item
+        android:id="@+id/completed_assignments"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="@string/mou_completed_assign"
+        app:iconTint="@color/colorDeepGreen" />
+    <!--    <item-->
+    <!--        android:id="@+id/mou_class_recs"-->
+    <!--        android:title="@string/mou_class_rec"-->
+    <!--        android:checkable="true"-->
+    <!--        android:icon="@drawable/ic_baseline_data_thresholding_24"-->
+    <!--        app:iconTint="@color/colorDeepGreen"/>-->
+    <item
+        android:id="@+id/mou_talibe_rep"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_data_thresholding_24"
+        android:title="@string/mou_talibe_rep"
+        app:iconTint="@color/colorDeepGreen" />
+    <item
+        android:id="@+id/mou_talibe_details"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/mou_talibe_details"
+        app:iconTint="@color/colorDeepGreen" />
+    <item
+        android:id="@+id/view_feedback"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_feedback_24"
+        android:title="@string/view_feedback"
+        app:iconTint="@color/colorDeepGreen" />
+    <item
+        android:id="@+id/maulim_logout"
+        android:checkable="true"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="LOGOUT"
+        app:iconTint="@color/colorDeepGreen" />
+</menu>

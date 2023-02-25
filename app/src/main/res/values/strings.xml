@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Tahfizul</string>
+    <string name="common_error">Something went wrong!</string>
+    <string name="home">Dashboard</string>
+    <string name="profile">Moulim Profile</string>
+    <string name="t_profile">Talib Ilm Profile</string>
+    <string name="w_profile">Walidain Profile</string>
+    <string name="mou_timeslots">Moulim Timeslots</string>
+    <string name="t_timeslots">Talib Ilm Timeslots</string>
+    <string name="mou_assignments">Assignments</string>
+    <string name="mou_new_assign">New Assignment</string>
+    <string name="mou_pending_assign">Pending Assignments</string>
+    <string name="mou_completed_assign">Completed Assignments</string>
+    <string name="mou_class_rec">Moulim Class Records</string>
+    <string name="mou_talibe_rep">Talibe Ilm Reports Assignments</string>
+    <string name="walid_talibe_rep">Talibe Ilm Reports</string>
+    <string name="walid_address_dummy">Ashoka Towers, Flat no-240, Malakpet, Hyderbad, RR District, Telengana State, India</string>
+    <string name="mou_talibe_details">Talibe Ilm Details</string>
+    <string name="t_talibe_details">Moulim Details</string>
+    <string name="feedback">Feedback</string>
+    <string name="view_feedback">View Feedback</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="about_assign">Your first task will be to find a topic that interests you, and that you think could be the basis for an intriguing and informative essay for people who have little or no previous acquaintance with this subject.</string>
+    <string name="pending_assign_title"><font color='#A9A9A9'>PENDING </font> ASSIGNMENTS </string>
+    <string name="dummy_txt_1">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
+    <string name="dummy_txt_2">Remark : Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
+    <string name="dummy_txt_3">About Assignment : Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
+    <string name="dummy_txt_4">Comment : Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
+    <string name="logout_title">LOG OUT</string>
+    <string name="logout_msg">Do you want to log out?</string>
+    <string name="info_title">SUPPORTED FILES</string>
+    <string name="info_msg">[.mp3] [.m4a] [.ogg] [.aac]</string>
+    <string name="no_internet_title">No Internet</string>
+    <string name="no_internet">Check your internet connection and Try again!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_your_country">Select Your Country</string>
+    <string name="title_activity_renew_subscription_screen">RenewSubscriptionScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="payments">Payments</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_keyboard">Urdu Keyboard Light</string>
+    <string name="sybtype_en_US">Urdu</string>
+    <string name="max_file_reached">File size max has been reached.</string>
+    <string name="stop_recording_notification_message">Drag down to stop the recording</string>
+    <string name="stop_recording_notification_title">Recording your screen</string>
+    <string name="start_recording">START</string>
+    <string name="stop_recording">STOP</string>
+    <string name="record_audio">Record Audio</string>
+    <string name="high_definition">High Definition</string>
+    <string name="standard_definition">Standard Definition</string>
+    <string name="max_file_label">Max File Size (k)</string>
+
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_video_resolution">Resolution</string>
+    <string name="title_record_audio">Record Audio</string>
+
+    <string name="summary_video_resolution">Specify video size</string>
+    <string name="summary_record_audio">Should audio be recorded</string>
+
+
+    <string name="key_record_audio">key_record_audio</string>
+    <string name="key_video_resolution">key_video_resolution</string>
+    <string name="key_video_fps">key_video_fps</string>
+    <string name="key_video_bitrate">key_video_bitrate</string>
+    <string name="key_show_notification">key_show_notification</string>
+    <string name="key_video_encoder">key_video_encoder</string>
+    <string name="key_audio_source">key_audio_source</string>
+    <string name="key_output_format">key_output_format</string>
+    <string name="quick_settings_title">QUICK SETTINGS</string>
+    <string name="custom_settings_title">USE CUSTOM SETTINGS</string>
+    <string name="or_title">or</string>
+    <string name="max_file_hint">Enter max file size</string>
+
+
+    <string name="settings_not_supported_message">Some settings are not supported by your device</string>
+    <string name="max_file_size_reached_message">The file reached the designated max size</string>
+    <string name="general_recording_error_message">HBRecorderOnError - See Log</string>
+</resources>
