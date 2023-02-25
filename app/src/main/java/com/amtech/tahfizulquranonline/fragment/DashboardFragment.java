@@ -74,9 +74,6 @@ public class DashboardFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        view.findViewById(R.id.header).setOnClickListener(v -> {
-            startActivity(new Intent(requireActivity(), MainActivity.class));
-        });
         testCallBtn = (TextView) view.findViewById(R.id.test_call_btn);
         refreshBtn = (TextView) view.findViewById(R.id.refresh_btn);
         NavigationView navigationView = getActivity().findViewById(R.id.navigation_view);

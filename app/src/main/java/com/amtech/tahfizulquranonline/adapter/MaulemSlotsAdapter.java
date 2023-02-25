@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.amtech.tahfizulquranonline.R;
 import com.amtech.tahfizulquranonline.activity.JitsiCallActivity;
 import com.amtech.tahfizulquranonline.models.SlotItem;
+import com.amtech.tahfizulquranonline.record.MainActivity;
 import com.amtech.tahfizulquranonline.utils.MyTimeCalculator;
 import com.amtech.tahfizulquranonline.utils.TimeDiffFinder;
 import com.karumi.dexter.Dexter;
@@ -146,10 +147,7 @@ public class MaulemSlotsAdapter extends RecyclerView.Adapter<MaulemSlotsAdapter.
         holder.slotBody.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                     checkPermissions(model.getDate(), stTimeStr, edTimeStr, maulimId, talibId);
-
-
             }
         });
     }
@@ -214,7 +212,7 @@ public class MaulemSlotsAdapter extends RecyclerView.Adapter<MaulemSlotsAdapter.
             int secLeft = (int) (diff/1000.0f);
             if(secLeft > 0)
             {
-                Intent intent = new Intent(context, JitsiCallActivity.class);
+                Intent intent = new Intent(context, MainActivity.class);
                 intent.putExtra("maulim_id", maulimId);
                 intent.putExtra("talib_id", talibId);
                 intent.putExtra("time_left", secLeft);

@@ -1,137 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="Overdraw">
 
-
-
-
-
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quick_settings_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:id="@+id/title_qs"
-        android:textStyle="bold"/>
+        android:visibility="gone">
 
-    <RadioGroup
-        android:layout_below="@+id/title_qs"
-        android:layout_marginTop="20dp"
-        android:id="@+id/radio_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/hd_button"
+        <TextView
+            android:id="@+id/title_qs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/high_definition"
-            />
+            android:layout_centerHorizontal="true"
 
-        <androidx.appcompat.widget.AppCompatRadioButton
-            android:id="@+id/sd_button"
+            android:layout_marginTop="40dp"
+            android:text="@string/quick_settings_title"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/standard_definition"
-            />
+            android:layout_below="@+id/title_qs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/hd_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/high_definition"
+
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/sd_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/standard_definition"
+
+                android:visibility="gone" />
 
     </RadioGroup>
 
+        <CheckBox
+            android:id="@+id/audio_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group"
+            android:layout_alignStart="@+id/radio_group"
+            android:layout_marginTop="30dp"
+            android:checked="true"
 
-    <CheckBox
-        android:id="@+id/audio_check_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/radio_group"
-        android:layout_below="@+id/radio_group"
-        android:layout_marginTop="30dp"
-        android:checked="true"
-        android:text="@string/record_audio"
-   />
+            android:text="@string/record_audio"
+            android:visibility="gone" />
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_below="@+id/audio_check_box"
-        android:layout_centerHorizontal="true"
-        android:background="#b1b1b1"
-        android:layout_marginTop="40dp"
-        android:id="@+id/hl1"
-        android:alpha="0.5"
-        tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/hl1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/audio_check_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:alpha="0.5"
+            android:background="#b1b1b1"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/or_title"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:layout_below="@+id/hl1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/tvOr"/>
-
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_centerHorizontal="true"
-        android:background="#b1b1b1"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/tvOr"
-        android:id="@+id/hl2"
-        android:alpha="0.5"
-        tools:ignore="ContentDescription" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/hl2"
-        android:layout_marginTop="40dp"
-        android:gravity="center">
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
 
         <TextView
+            android:id="@+id/tvOr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/custom_settings_title"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:id="@+id/tvCustom"/>
+            android:layout_below="@+id/hl1"
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/custom_settings_switch"
-            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/or_title"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/hl2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvOr"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dp"
+            android:alpha="0.5"
+            android:background="#b1b1b1"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/tvCustom"
-            android:layout_marginStart="20dp"/>
+            android:layout_below="@+id/hl2"
+            android:layout_marginTop="40dp"
+
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/custom_settings_title"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/custom_settings_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/tvCustom" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="Allow Class Recording"
+        android:textColor="@color/dark_green"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/record"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.432"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="We will check your call to check your class. For this we have to record your calling"
+        android:textColor="@color/black_lite"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/button_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/pressed"
             android:text="@string/start_recording"
             android:textColor="@android:color/white"
-            android:background="@drawable/pressed"
-            tools:text="@string/start_recording"/>
+            tools:text="@string/allow" />
 
     </RelativeLayout>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

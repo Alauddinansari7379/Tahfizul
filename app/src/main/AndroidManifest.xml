@@ -146,7 +146,11 @@
             android:name=".activity.SplashActivity"
             android:exported="true"
             android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.MainActivity"
@@ -171,12 +175,9 @@
 
         <receiver android:name=".record.hbrecorder.NotificationReceiver" />
         <activity android:name=".record.MainActivity"
+            android:theme="@style/AppTheme2"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

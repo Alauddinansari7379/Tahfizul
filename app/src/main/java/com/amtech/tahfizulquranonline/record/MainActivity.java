@@ -1,7 +1,6 @@
 package com.amtech.tahfizulquranonline.record;
 
 import static android.content.res.Configuration.ORIENTATION_PORTRAIT;
-
 import static com.amtech.tahfizulquranonline.record.hbrecorder.Constants.MAX_FILE_SIZE_REACHED_ERROR;
 import static com.amtech.tahfizulquranonline.record.hbrecorder.Constants.SETTINGS_ERROR;
 
@@ -42,6 +41,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.amtech.tahfizulquranonline.R;
+import com.amtech.tahfizulquranonline.activity.JitsiCallActivity;
 import com.amtech.tahfizulquranonline.record.hbrecorder.HBRecorder;
 import com.amtech.tahfizulquranonline.record.hbrecorder.HBRecorderCodecInfo;
 import com.amtech.tahfizulquranonline.record.hbrecorder.HBRecorderListener;
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements HBRecorderListene
     private boolean hasPermissions = false;
 
     //Declare HBRecorder
-    private HBRecorder hbRecorder;
+    public static HBRecorder hbRecorder;
 
     //Start/Stop Button
     private Button startbtn;
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements HBRecorderListene
             //When the user returns to the application, some UI changes might be necessary,
             //check if recording is in progress and make changes accordingly
             if (hbRecorder.isBusyRecording()) {
-                startbtn.setText(R.string.stop_recording);
+//                startbtn.setText(R.string.stop_recording);
             }
         }
 
@@ -214,8 +214,6 @@ public class MainActivity extends AppCompatActivity implements HBRecorderListene
                     }
 
                     if (hasPermissions) {
-                        //check if recording is in progress
-                        //and stop it if it is
                         if (hbRecorder.isBusyRecording()) {
                             hbRecorder.stopScreenRecording();
                             startbtn.setText(R.string.start_recording);
@@ -345,7 +343,8 @@ public class MainActivity extends AppCompatActivity implements HBRecorderListene
             Intent permissionIntent = mediaProjectionManager != null ? mediaProjectionManager.createScreenCaptureIntent() : null;
             startActivityForResult(permissionIntent, SCREEN_RECORD_REQUEST_CODE);
         }
-        startbtn.setText(R.string.stop_recording);
+//        startbtn.setText(R.string.stop_recording);
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -599,8 +598,14 @@ public class MainActivity extends AppCompatActivity implements HBRecorderListene
                     //Set file path or Uri depending on SDK version
                     setOutputPath();
                     //Start screen recording
-                    hbRecorder.startScreenRecording(data, resultCode);
-
+//                    hbRecorder.startScreenRecording(data, resultCode);
+                    Intent intent = new Intent(this, JitsiCallActivity.class);
+                    intent.putExtra("maulim_id", "1");
+                    intent.putExtra("talib_id", "");
+                    intent.putExtra("data", data);
+                    intent.putExtra("resultCode", resultCode);
+                    intent.putExtra("time_left", getIntent().getIntExtra("time_left", 0));
+                    startActivity(intent);
                 }
             }
         }
