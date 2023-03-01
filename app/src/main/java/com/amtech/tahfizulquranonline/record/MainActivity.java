@@ -30,6 +30,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.DrawableRes;
@@ -124,7 +125,11 @@ public class MainActivity extends AppCompatActivity implements HBRecorderListene
         setOnClickListeners();
         setRadioGroupCheckListener();
         setRecordAudioCheckBoxListener();
+        TextView textView = findViewById(R.id.title);
+        textView.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, SettingsActivity.class));
 
+        });
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             //Init HBRecorder
             hbRecorder = new HBRecorder(this, this);
@@ -600,10 +605,11 @@ public class MainActivity extends AppCompatActivity implements HBRecorderListene
                     //Start screen recording
 //                    hbRecorder.startScreenRecording(data, resultCode);
                     Intent intent = new Intent(this, JitsiCallActivity.class);
-                    intent.putExtra("maulim_id", "1");
-                    intent.putExtra("talib_id", "");
+                    intent.putExtra("maulim_id", getIntent().getStringExtra("maulim_id"));
+                    intent.putExtra("talib_id",  getIntent().getStringExtra("talib_id"));
                     intent.putExtra("data", data);
                     intent.putExtra("resultCode", resultCode);
+                    intent.putExtra("is_maulim", true);
                     intent.putExtra("time_left", getIntent().getIntExtra("time_left", 0));
                     startActivity(intent);
                 }

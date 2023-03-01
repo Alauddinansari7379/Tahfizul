@@ -215,6 +215,7 @@ public class TalibSlotAdapter extends RecyclerView.Adapter<TalibSlotAdapter.View
                 Intent intent = new Intent(context, JitsiCallActivity.class);
                 intent.putExtra("maulim_id", maulimId);
                 intent.putExtra("talib_id", talibID);
+                intent.putExtra("is_maulim", false);
                 intent.putExtra("time_left", secLeft);
                 context.startActivity(intent);
                 ((Activity)context).finish();

@@ -150,16 +150,8 @@ public class JitsiCallActivity extends FragmentActivity implements JitsiMeetActi
             handler.removeMessages(0);
         }
         Intent intent;
-        if(loginUser == MAULIM)
-        {
-            callEnd();
-            finish();
-        }
-        else
-        {
-            callEnd();
-            finish();
-        }
+        callEnd();
+        finish();
 
 
     }
@@ -211,17 +203,21 @@ public class JitsiCallActivity extends FragmentActivity implements JitsiMeetActi
     }
 
     public void callStart() {
-        if (getIntent() != null) {
+        if (getIntent() != null && getIntent().getBooleanExtra("is_maulim", false)) {
             Log.d("TAG", "callStart: ");
             Intent mResultData = getIntent().getParcelableExtra("data");
             MainActivity.hbRecorder.startScreenRecording(mResultData, getIntent().getIntExtra("resultCode", 0));
         }
+
+
     }
 
     public void callEnd() {
-        Log.d("TAG", "callEnd: ");
-        Intent service = new Intent(this, ScreenRecordService.class);
-        stopService(service);
+        if (getIntent() != null && getIntent().getBooleanExtra("is_maulim", false)) {
+            Log.d("TAG", "callEnd: ");
+            Intent service = new Intent(this, ScreenRecordService.class);
+            stopService(service);
+        }
     }
 
     @Override

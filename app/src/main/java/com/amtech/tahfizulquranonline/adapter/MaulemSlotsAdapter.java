@@ -216,6 +216,7 @@ public class MaulemSlotsAdapter extends RecyclerView.Adapter<MaulemSlotsAdapter.
                 intent.putExtra("maulim_id", maulimId);
                 intent.putExtra("talib_id", talibId);
                 intent.putExtra("time_left", secLeft);
+                intent.putExtra("is_maulim", true);
                 context.startActivity(intent);
 
             }

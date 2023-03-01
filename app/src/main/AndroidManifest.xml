@@ -41,6 +41,9 @@
             android:name="com.razorpay.CheckoutActivity"
             android:exported="true" />
         <activity
+            android:name=".record.SettingsActivity"
+            android:exported="true" />
+        <activity
             android:name=".v2.MoulimProfileActivity"
             android:exported="true"
             android:theme="@style/AppTheme2">
